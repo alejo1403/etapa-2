@@ -36,7 +36,6 @@ export default {
 
   computed: {
     sortedItems() {
-      // Filtra y ordena los items por el campo "ID"
       const itemsWithID = this.items.filter(item => !isNaN(item.ID));
       return itemsWithID.slice().sort((a, b) => a.ID - b.ID);
     },
@@ -65,7 +64,6 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos para la tabla */
 .styled-table {
   width: 100%;
   border-collapse: collapse;
@@ -80,13 +78,13 @@ export default {
   border: 1px solid #000;
 }
 
-/* Estilos para las celdas específicas */
+
 .styled-table th {
-  background-color: #808080; /* Gris */
-  color: #fff; /* Letra blanca */
+  background-color: #808080; 
+  color: #fff; 
 }
 
 .styled-table td {
-  color: #000; /* Letra negra */
+  color: #000; 
 }
 </style>
